@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 路由动画 */
+.v-enter {
+  opacity: 0;
+}
+.v-enter-active {
+  transition: 0.3s;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-leave {
+  opacity: 1;
+}
+.v-leave-to {
+  opacity: 0;
+}
+.v-leave-active {
+  transition: 0.3s;
+}

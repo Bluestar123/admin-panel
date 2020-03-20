@@ -12,14 +12,14 @@
           <NavMenu :navMenus="$router.options.routes"></NavMenu>
         </el-menu>
       </el-aside>
-      <el-main>
+      <el-main class="d-flex flex-direction">
         <el-breadcrumb separator="/" class="title">
           <el-breadcrumb-item v-for="item in $route.matched" :key="item.path" v-show='item.name'>
             <router-link :to="item.redirect||item.path">{{ item.name }}</router-link>
           </el-breadcrumb-item>
         </el-breadcrumb>
         <transition mode="out-in">
-          <router-view></router-view>
+          <router-view class='flex-1'></router-view>
         </transition>
       </el-main>
     </el-container>
@@ -34,7 +34,6 @@ export default {
     NavMenu
   },
   mounted() {
-    console.log(this.$router.options.routes)
   }
 }
 </script>

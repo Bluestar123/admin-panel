@@ -10,7 +10,7 @@ const routes = [
     component: baseLayout,
     redirect: {
       name: 'home'
-    },  
+    },
     meta: {
       title: '首页'
     },
@@ -19,7 +19,7 @@ const routes = [
         path: '/',
         name: 'home',
         meta: {
-          title: '首页1',
+          title: '首页1'
         },
         component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
       }
@@ -27,9 +27,8 @@ const routes = [
   },
   {
     path: '/about',
-    name: '444',
     meta: {
-      title: '关于',
+      title: '关于'
     },
     component: baseLayout,
     children: [

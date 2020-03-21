@@ -7,5 +7,10 @@
 <style lang="scss" scoped>
 h1{
   color: $color;
+  animation: a .2s;
+}
+@keyframes a {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 </style>

@@ -5,7 +5,7 @@ import store from './store'
 import './plugins/element.js'
 import http from '@/api/http.js'
 
-import '@/styles/common.css'
+import '@/styles/common.scss'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = http

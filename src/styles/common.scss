@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 路由动画 */
+.v-enter {
+  opacity: 0;
+}
+.v-enter-active {
+  transition: 0.3s;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-leave {
+  opacity: 1;
+}
+.v-leave-to {
+  opacity: 0;
+}
+.v-leave-active {
+  transition: 0.3s;
+}
+
+/* flex */
+.d-flex {
+  display: flex;
+}
+.flex-direction {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+
+// 按钮
+// .btn {
+//   min-width: 124px;
+//   border: 1px solid transparent;
+//   outline: none;
+//   padding: 2px 34px;
+//   line-height: 28px;
+//   border-radius: 17px;
+//   background-color: #eee;
+//   color: #222;
+//   cursor: pointer;
+//   &:hover {
+//     background-color: lighten($color: $color, $amount: 5%);
+//     border-color: lighten($color: $color, $amount: 5%);
+//   }
+//   &:active {
+//     background-color: darken($color: $color, $amount: 5%);
+//     border-color: darken($color: $color, $amount: 5%);
+//   }
+//   &.disable{
+//     cursor: no-drop;
+//   }
+// }
+
+// .btn-gounp {
+//   .btn + .btn {
+//     margin-left: 40px;
+//   }
+//   padding-bottom: 20px;
+// }
